@@ -26,7 +26,9 @@ try {
   }
 };
 
-app.get("/", (req, res) => res.send("Welcome to our API"));
+app.get("/", (req, res) => {
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.send("Welcome to our API"));
 
 app.use(express.json());
 app.use(cookieParser());
