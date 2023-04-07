@@ -13,7 +13,7 @@ import cors from "cors";
 
 
 const app = express();
-const PORT = process.env.PORT || "https://musiciansunited-frontend.onrender.com";
+const PORT = process.env.PORT || "https://musiciansunited-backend.onrender.com";
 dotenv.config();
 mongoose.set('strictQuery', true);
 
