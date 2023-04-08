@@ -11,9 +11,9 @@ import reviewRoute from "./routes/review.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
-
+const express = require("express");
 const app = express();
-const PORT = process.env.PORT || "https://musiciansunited-backend.onrender.com/api";
+const PORT = process.env.PORT || 8800;
 dotenv.config();
 mongoose.set('strictQuery', true);
 
